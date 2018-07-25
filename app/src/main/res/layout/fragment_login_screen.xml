@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/doober_button_log_in"
+        android:layout_centerInParent="true"
+        android:text="@string/log_in" />
+
+    <TextView
+        android:id="@+id/or_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/log_in_screen_padding"
+        android:text="@string/or"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/facebook_sign_in"
+        style="@style/doober_button"
+        android:layout_below="@id/or_text_view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/log_in_screen_padding"
+        android:text="@string/face_book_sign_in" />
+
+    <Button
+        android:id="@+id/google_sign_in"
+        style="@style/doober_button"
+        android:layout_below="@id/facebook_sign_in"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/log_in_screen_padding"
+        android:text="@string/googlesign_in" />
+
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google_sign_in"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/log_in_screen_padding"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/log_in_screen_padding"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white" />
+
+
+    <EditText
+
+        android:id="@+id/input_password"
+        style="@style/doober_edit_text"
+        android:layout_above="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/log_in_screen_padding"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword" />
+
+    <EditText
+
+        android:id="@+id/input_userName"
+        style="@style/doober_edit_text"
+        android:layout_above="@id/input_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/log_in_screen_padding"
+        android:hint="@string/user_name_hint"
+        android:inputType="textEmailAddress" />
+
+
+</RelativeLayout>

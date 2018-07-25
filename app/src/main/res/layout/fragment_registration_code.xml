@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/phone_number_with_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_number_with_code"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/sms_info" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sms_text"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:hint="@string/code"
+        android:inputType="number"
+        android:paddingTop="20dp" />
+
+    <View
+        android:id="@+id/divider_one"
+        style="@style/divider"
+        android:layout_below="@+id/code"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/doober_button_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/resend_code" />
+</RelativeLayout>

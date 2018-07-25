@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="face_book_sign_in">Sign in with Facebook</string>
+    <string name="googlesign_in">Sign In with Google</string>
+    <string name="or">Or</string>
+    <string name="log_in">LogIn</string>
+    <string name="password_hint">Password</string>
+    <string name="user_name_hint">Email</string>
+
+    <string name="account_type_title">Account Type</string>
+    <string name="manager">Business Owner or Manager</string>
+    <string name="employee">Employee</string>
+
+    <string name="country_code">US %d</string>
+    <string name="enter_number">Enter your phone number</string>
+    <string name="your_phone">Your Phone</string>
+    <string name="your_phone_info">Please Confirm your country code\n and enter your mobile number</string>
+
+
+    <string name="sms_info">We have sent you the code through SMS</string>
+    <string name="code">Code</string>
+    <string name="resend_code">Resend code</string>
+
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="home_search_hint">Search  by business or product</string>
+
+    <string-array name="navigation_drawer_items">
+        <item>Messaging History</item>
+        <item>Account</item>
+        <item>Support</item>
+        <item>About</item>
+        <item>Log Out</item>
+    </string-array>
+</resources>

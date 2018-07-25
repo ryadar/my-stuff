@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingTop="25dp"
+        android:id="@+id/your_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/your_phone" />
+
+    <TextView
+        android:paddingTop="25dp"
+
+        android:id="@+id/phone_number_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/your_phone_number"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/your_phone_info" />
+
+    <View
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/divider_one"
+        style="@style/divider"
+        android:layout_below="@+id/phone_number_info" />
+
+
+    <TextView
+        android:id="@+id/country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/divider_one"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:text="@string/country_code"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divider_one"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:src="@drawable/arrow_forward" />
+
+    <View
+        android:id="@+id/divider_two"
+        style="@style/divider"
+        android:layout_below="@+id/country_code"
+        android:layout_marginTop="10dp"></View>
+
+
+    <EditText
+        android:inputType="phone"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/enter_your_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/divider_two"
+        android:gravity="center_vertical"
+        android:hint="@string/enter_number"
+        android:textColor="@android:color/black" />
+
+
+    <View
+        android:id="@+id/divider_three"
+        style="@style/divider"
+        android:layout_below="@+id/enter_your_number"
+        android:layout_marginTop="10dp"></View>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/accountTypeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="@string/account_type_title"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/divider_one"
+        style="@style/divider"
+        android:layout_below="@+id/accountTypeTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"></View>
+
+    <TextView
+        android:paddingLeft="15dp"
+        android:id="@+id/manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_one"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="@string/manager"
+        android:textColor="@android:color/black" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divider_one"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:src="@drawable/arrow_forward" />
+
+    <View
+
+        android:id="@+id/divider_two"
+
+        style="@style/divider"
+
+        android:layout_below="@+id/manager"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"></View>
+
+    <TextView
+        android:id="@+id/employee_title"
+        android:layout_width="wrap_content"
+        android:paddingLeft="15dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_two"
+android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="@string/employee"
+        android:textColor="@android:color/black" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divider_two"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:src="@drawable/arrow_forward" />
+
+
+    <View
+
+        style="@style/divider"
+
+        android:layout_below="@+id/employee_title"
+
+        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"></View>
+
+
+</RelativeLayout>
